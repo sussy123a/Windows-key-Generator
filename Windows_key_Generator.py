@@ -1,18 +1,16 @@
 import random
 import string
-import time
 
 def generate_random_key():
-    # Generate random parts for each section
+    # Generate key for Windows 10 sigma rizz edition  
     key_parts = []
     for _ in range(5):  # 5 sections
-        part = ''.join(random.choices(string.ascii_uppercase, k=5))  # 5 characters long
+        part = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))  # 5 characters long
         key_parts.append(part)
     
-    # Join the parts with hyphens
+    # Join the parts  
     return '-'.join(key_parts)
 
-# Generate and print the key
+# Generate  
 random_key = generate_random_key()
 print(random_key)
-time.sleep(5)
